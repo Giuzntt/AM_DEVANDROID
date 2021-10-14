@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_bg_info"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".InfoFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ivAboutLogoFA1"
+            android:layout_width="@dimen/logo_info"
+            android:layout_height="@dimen/logo_info"
+            android:src="@drawable/logo_fa1"
+            android:layout_marginTop="@dimen/margin_top_default"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/ivAboutLogoTCESP"
+            android:contentDescription="@string/logo_forever_a1" />
+
+        <ImageView
+            android:id="@+id/ivAboutLogoTCESP"
+            android:layout_width="@dimen/logo_info"
+            android:layout_height="@dimen/logo_info"
+            android:src="@drawable/logo_tcesp"
+            android:layout_marginTop="@dimen/margin_top_default"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/ivAboutLogoFA1"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:contentDescription="@string/logo_tcesp" />
+
+        <TextView
+            android:id="@+id/tvInfoTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/grupo_tec_tec_tech_tcesp"
+            android:textAlignment="center"
+            android:textSize="@dimen/text_title"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_marginTop="@dimen/margin_small_default"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ivAboutLogoFA1"
+            app:layout_constraintBottom_toTopOf="@id/tvInfoText" />
+
+        <TextView
+            android:id="@+id/tvInfoText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_title_text_info"
+            android:layout_marginStart="@dimen/margin_small_default"
+            android:layout_marginEnd="@dimen/margin_small_default"
+            android:text="@string/text_info"
+            android:textSize="@dimen/text_size_info"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvInfoTitle" />
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/btBackInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/margin_top_default"
+            app:layout_constraintTop_toBottomOf="@id/tvInfoText"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:contentDescription="@string/bt_back"
+            android:text="@string/back"
+            android:textColor="@color/white"
+            app:icon="@drawable/icon_arrow_back"
+            app:iconTint="@color/white"
+            android:backgroundTint="@color/dark_red"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="logo_width_login">200dp</dimen>
+    <dimen name="logo_height_login">200dp</dimen>
+    <dimen name="margin_top_default">48dp</dimen>
+    <dimen name="text_title">26sp</dimen>
+    <dimen name="margin_small_default">16dp</dimen>
+    <dimen name="margin_big">60dp</dimen>
+    <dimen name="margin_bottom_screen">32dp</dimen>
+    <dimen name="button_text">20sp</dimen>
+    <dimen name="margin_side_big">72dp</dimen>
+    <dimen name="margin_top_splash">220dp</dimen>
+    <dimen name="progress_thickness">4dp</dimen>
+    <dimen name="radius_small">5dp</dimen>
+    <dimen name="main_banner_height">250dp</dimen>
+    <dimen name="text_big">42sp</dimen>
+    <dimen name="main_button">120dp</dimen>
+    <dimen name="logo_info">150dp</dimen>
+    <dimen name="margin_title_text_info">32dp</dimen>
+    <dimen name="text_size_info">18sp</dimen>
+    <dimen name="button_height">60dp</dimen>
+    <dimen name="margin_top_title_search">72dp</dimen>
+    <dimen name="margin_top_generate_button">100dp</dimen>
+</resources>

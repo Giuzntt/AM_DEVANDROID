@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainFragment">
+
+   <androidx.constraintlayout.widget.ConstraintLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+
+      <TextView
+          android:id="@+id/tvMainBanner"
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/main_banner_height"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          android:background="@drawable/tcesp_bg"
+          android:backgroundTint="@color/op99_dark_red"
+          android:backgroundTintMode="src_over"
+          android:text="@string/welcome"
+          android:textColor="@color/white"
+          android:textStyle="bold"
+          android:textSize="@dimen/text_big"
+          android:gravity="center_vertical|center_horizontal" />
+
+      <Button
+          android:id="@+id/btSearch"
+          android:layout_width="@dimen/main_button"
+          android:layout_height="@dimen/main_button"
+          android:layout_marginTop="@dimen/margin_top_default"
+          app:layout_constraintTop_toBottomOf="@id/tvMainBanner"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintEnd_toStartOf="@id/btAboutApp"
+          android:drawableTop="@drawable/icon_search"
+          android:text="@string/search"
+          android:textStyle="bold"
+          android:textColor="@color/white"
+          android:textAlignment="center"
+          android:backgroundTint="@color/dark_red"/>
+
+      <Button
+          android:id="@+id/btAboutApp"
+          android:layout_width="@dimen/main_button"
+          android:layout_height="@dimen/main_button"
+          android:layout_marginTop="@dimen/margin_top_default"
+          android:drawableTop="@drawable/icon_info"
+          android:text="@string/info"
+          android:textStyle="bold"
+          android:textAlignment="center"
+          android:textColor="@color/white"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toEndOf="@id/btSearch"
+          app:layout_constraintTop_toBottomOf="@id/tvMainBanner"
+          app:layout_constraintVertical_bias="0.0"
+          android:backgroundTint="@color/dark_red"/>
+
+      <Button
+          android:id="@+id/btExitMain"
+          android:layout_width="@dimen/main_button"
+          android:layout_height="@dimen/main_button"
+          android:layout_marginTop="@dimen/margin_top_default"
+          android:drawableTop="@drawable/icon_exit"
+          android:text="@string/exit"
+          android:textStyle="bold"
+          android:textAlignment="center"
+          android:textColor="@color/white"
+          android:layout_marginBottom="@dimen/margin_bottom_screen"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@id/btSearch"
+          app:layout_constraintVertical_bias="0.0"
+          android:backgroundTint="@color/dark_red"/>
+
+   </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
