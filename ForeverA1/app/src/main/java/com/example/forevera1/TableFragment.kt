@@ -6,10 +6,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ArrayAdapter
-import androidx.navigation.fragment.findNavController
 import com.example.forevera1.databinding.FragmentSearchBinding
 
-class SearchFragment : Fragment() {
+class TableFragment : Fragment() {
 
     private var binding: FragmentSearchBinding? = null
 
@@ -32,18 +31,10 @@ class SearchFragment : Fragment() {
                 val arrayAdapterMunicipios = ArrayAdapter(requireContext(), android.R.layout.simple_list_item_1, municipios)
                 binding!!.actvMunicipio.setAdapter(arrayAdapterMunicipios)
 
-                btBackSearch.setOnClickListener {
-                    findNavController()
-                        .navigate(
-                            R.id.action_searchFragment_to_mainFragment
-                        )
-                }
 
-                btSearchSearch.setOnClickListener(){
-                    findNavController()
-                        .navigate(
-                            R.id.action_searchFragment_to_resultFragment
-                        )
+
+                btBackSearch.setOnClickListener {
+                    activity?.onBackPressed()
                 }
 
             }

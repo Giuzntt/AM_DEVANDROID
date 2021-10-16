@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
 
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".LoginFragment">
+    tools:context=".RegisterFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -53,7 +53,7 @@
             app:startIconDrawable="@drawable/icon_user">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/tieLoginEmail"
+                android:id="@+id/tieRegisterEmail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textEmailAddress" />
@@ -75,28 +75,15 @@
             app:startIconDrawable="@drawable/icon_padlock">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/tieLoginPassword"
+                android:id="@+id/tieRegisterPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textPassword" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
-        <TextView
-            android:id="@+id/tvCadastro"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Já se cadastrou?"
-            android:textColor="@color/dark_red"
-            android:textSize="18sp"
-            android:fontFamily="sans-serif-black"
-            android:textAlignment="center"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintBottom_toTopOf="@+id/btLogin"
-            app:layout_constraintTop_toBottomOf="@+id/tilLoginPassword" />
         <Button
-            android:id="@+id/btLogin"
+            android:id="@+id/btRegister"
             android:layout_width="0dp"
             android:layout_height="@dimen/button_height"
             app:layout_constraintStart_toStartOf="parent"
@@ -107,7 +94,7 @@
             android:layout_marginBottom="@dimen/margin_bottom_screen"
             android:layout_marginStart="@dimen/margin_small_default"
             android:layout_marginEnd="@dimen/margin_small_default"
-            android:text="@string/login"
+            android:text="@string/registrar"
             android:textStyle="bold"
             android:textSize="@dimen/button_text"
             android:textColor="@color/white"

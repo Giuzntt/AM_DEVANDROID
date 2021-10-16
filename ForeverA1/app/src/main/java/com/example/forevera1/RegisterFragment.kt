@@ -6,18 +6,18 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
-import com.example.forevera1.databinding.FragmentLoginBinding
+import com.example.forevera1.databinding.FragmentRegisterBinding
 
-class LoginFragment : Fragment() {
+class RegisterFragment : Fragment() {
 
-    private var binding: FragmentLoginBinding? = null
+    private var binding: FragmentRegisterBinding? = null
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        binding = FragmentLoginBinding.inflate(inflater, container, false)
+        binding = FragmentRegisterBinding.inflate(inflater, container, false)
         return binding?.root
     }
 
@@ -28,9 +28,9 @@ class LoginFragment : Fragment() {
 
         binding?.let {
             with(it) {
-                btLogin.setOnClickListener {
-                    val email = tieLoginEmail.text.toString()
-                    val password = tieLoginPassword.text.toString()
+                btRegister.setOnClickListener {
+                    val email = tieRegisterEmail.text.toString()
+                    val password = tieRegisterPassword.text.toString()
 
                     if (email.isBlank()) {
                         tilLoginEmail.error = getString(R.string.field_empty_invalid)
@@ -48,26 +48,20 @@ class LoginFragment : Fragment() {
 
                         findNavController()
                             .navigate(
-                                R.id.action_loginFragment_to_mainFragment
+                                R.id.action_registerFragment_to_mainFragment
                             )
                     }
 
                 }
-                tvCadastro.setOnClickListener {
-                    findNavController()
-                        .navigate(
-                            R.id.action_loginFragment_to_registerFragment2
-                        )
-                }
-
 
             }
 
-
-
-
         }
+
     }
+
+
+
 
 
     override fun onDestroyView() {

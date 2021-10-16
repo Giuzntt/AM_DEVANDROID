@@ -6,18 +6,18 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
-import com.example.forevera1.databinding.FragmentMainBinding
+import com.example.forevera1.databinding.FragmentResultBinding
 
-class MainFragment : Fragment() {
+class ResultFragment : Fragment() {
 
-    private var binding: FragmentMainBinding? = null
+    private var binding: FragmentResultBinding? = null
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        binding = FragmentMainBinding.inflate(inflater, container, false)
+        binding = FragmentResultBinding.inflate(inflater, container, false)
         return binding?.root
     }
 
@@ -27,34 +27,16 @@ class MainFragment : Fragment() {
         binding?.let {
             with(it) {
 
-                btSearch.setOnClickListener {
+                btBack.setOnClickListener {
                     findNavController()
                         .navigate(
-                            R.id.action_mainFragment_to_searchFragment
-                        )
-                }
-
-                btAboutApp.setOnClickListener {
-                    findNavController()
-                        .navigate(
-                            R.id.action_mainFragment_to_infoFragment
-                        )
-                }
-
-                btExitMain.setOnClickListener {
-                    findNavController()
-                        .navigate(
-                            R.id.action_mainFragment_to_loginFragment
+                            R.id.action_resultFragment_to_searchFragment
                         )
                 }
 
             }
         }
-
-
     }
-
-
 
     override fun onDestroyView() {
         super.onDestroyView()

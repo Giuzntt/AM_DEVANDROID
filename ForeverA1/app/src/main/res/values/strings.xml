@@ -21,6 +21,7 @@
     <string name="hint_municipio">Digite o município</string>
     <string name="hint_file_type">Seleciona o tipo de arquivo</string>
     <string name="generate_file">Gerar arquivo</string>
+    <string name="tabela">tabela</string>
     <string-array name="file_type">
         <item>CSV</item>
         <item>PDF</item>
@@ -34,4 +35,10 @@
         <item>Osasco</item>
         <item>Diadema</item>
     </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="pesquisar">PESQUISAR</string>
+    <string name="mudar_status">Mudar Status</string>
+    <string name="selecione_o_status">Selecione o status...</string>
+    <string name="registrar">REGISTRAR</string>
 </resources>

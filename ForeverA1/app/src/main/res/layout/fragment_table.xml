@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".SearchFragment">
+    tools:context=".TableFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -14,7 +14,7 @@
             android:id="@+id/tvSearchTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/title_search"
+            android:text="Checar Municipios"
             android:textAlignment="center"
             android:textSize="@dimen/text_title"
             android:textStyle="bold"
@@ -48,7 +48,7 @@
             android:layout_marginStart="@dimen/margin_small_default"
             android:layout_marginEnd="@dimen/margin_small_default"
             app:layout_constraintTop_toBottomOf="@id/tvSearchText"
-            app:layout_constraintBottom_toTopOf="@id/btSearchSearch"
+            app:layout_constraintBottom_toTopOf="@id/tilSelectFile"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:startIconDrawable="@drawable/icon_city">
@@ -62,8 +62,29 @@
 
         </com.google.android.material.textfield.TextInputLayout>
 
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilSelectFile"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="@dimen/margin_small_default"
+            android:layout_marginEnd="@dimen/margin_small_default"
+            app:layout_constraintTop_toBottomOf="@id/tilSearchMunicipio"
+            app:layout_constraintBottom_toTopOf="@id/btSearchSearch"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:startIconDrawable="@drawable/ic_status">
 
+            <AutoCompleteTextView
+                android:id="@+id/actvSelectCheck"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="none"
+                android:hint="@string/selecione_o_status"/>
 
+        </com.google.android.material.textfield.TextInputLayout>
 
         <Button
             android:id="@+id/btSearchSearch"
@@ -71,12 +92,12 @@
             android:layout_height="@dimen/button_height"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/tilSearchMunicipio"
+            app:layout_constraintTop_toBottomOf="@id/tilSelectFile"
             app:layout_constraintBottom_toTopOf="@id/btBackSearch"
             android:layout_marginTop="@dimen/margin_top_generate_button"
             android:layout_marginStart="@dimen/margin_small_default"
             android:layout_marginEnd="@dimen/margin_small_default"
-            android:text="@string/pesquisar"
+            android:text="@string/mudar_status"
             android:textStyle="bold"
             android:textSize="@dimen/button_text"
             android:textColor="@color/white"
@@ -87,16 +108,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginVertical="@dimen/margin_top_default"
-            android:backgroundTint="@color/dark_red"
-            android:contentDescription="@string/bt_back"
-            android:text="@string/back"
-            android:textColor="@color/white"
-            app:icon="@drawable/icon_arrow_back"
-            app:iconTint="@color/white"
+            app:layout_constraintTop_toBottomOf="@id/btSearchSearch"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/btSearchSearch" />
+            android:textAlignment="center"
+            android:contentDescription="@string/bt_back"
+            android:text="@string/back"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/dark_red"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
