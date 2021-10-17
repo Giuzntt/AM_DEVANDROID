@@ -71,7 +71,7 @@
             android:layout_marginStart="@dimen/margin_small_default"
             android:layout_marginEnd="@dimen/margin_small_default"
             app:layout_constraintTop_toBottomOf="@id/tilSearchMunicipio"
-            app:layout_constraintBottom_toTopOf="@id/btSearchSearch"
+            app:layout_constraintBottom_toTopOf="@id/btTableChange"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:startIconDrawable="@drawable/ic_status">
@@ -87,13 +87,13 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <Button
-            android:id="@+id/btSearchSearch"
+            android:id="@+id/btTableChange"
             android:layout_width="0dp"
             android:layout_height="@dimen/button_height"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@id/tilSelectFile"
-            app:layout_constraintBottom_toTopOf="@id/btBackSearch"
+            app:layout_constraintBottom_toTopOf="@id/btBackTable"
             android:layout_marginTop="@dimen/margin_top_generate_button"
             android:layout_marginStart="@dimen/margin_small_default"
             android:layout_marginEnd="@dimen/margin_small_default"
@@ -104,11 +104,11 @@
             android:backgroundTint="@color/dark_red"/>
 
         <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
-            android:id="@+id/btBackSearch"
+            android:id="@+id/btBackTable"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginVertical="@dimen/margin_top_default"
-            app:layout_constraintTop_toBottomOf="@id/btSearchSearch"
+            app:layout_constraintTop_toBottomOf="@id/btTableChange"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"

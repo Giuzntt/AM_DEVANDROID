@@ -6,18 +6,20 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ArrayAdapter
+import androidx.navigation.fragment.findNavController
 import com.example.forevera1.databinding.FragmentSearchBinding
+import com.example.forevera1.databinding.FragmentTableBinding
 
 class TableFragment : Fragment() {
 
-    private var binding: FragmentSearchBinding? = null
+    private var binding: FragmentTableBinding? = null
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        binding = FragmentSearchBinding.inflate(inflater, container, false)
+        binding = FragmentTableBinding.inflate(inflater, container, false)
         return binding?.root
     }
 
@@ -31,10 +33,11 @@ class TableFragment : Fragment() {
                 val arrayAdapterMunicipios = ArrayAdapter(requireContext(), android.R.layout.simple_list_item_1, municipios)
                 binding!!.actvMunicipio.setAdapter(arrayAdapterMunicipios)
 
-
-
-                btBackSearch.setOnClickListener {
-                    activity?.onBackPressed()
+                btBackTable.setOnClickListener {
+                    findNavController()
+                        .navigate(
+                            R.id.action_tableFragment_to_mainFragment2
+                        )
                 }
 
             }
