@@ -47,12 +47,6 @@ class MainFragment : Fragment() {
                             R.id.action_mainFragment_to_loginFragment
                         )
                 }
-                btTable.setOnClickListener {
-                    findNavController()
-                        .navigate(
-                            R.id.action_mainFragment_to_tableFragment2
-                        )
-                }
 
             }
         }

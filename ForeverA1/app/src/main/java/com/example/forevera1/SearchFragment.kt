@@ -39,7 +39,7 @@ class SearchFragment : Fragment() {
                         )
                 }
 
-                btSearchSearch.setOnClickListener(){
+                btSearchSearch.setOnClickListener{
                     findNavController()
                         .navigate(
                             R.id.action_searchFragment_to_resultFragment

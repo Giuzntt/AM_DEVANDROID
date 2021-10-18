@@ -62,9 +62,6 @@
 
         </com.google.android.material.textfield.TextInputLayout>
 
-
-
-
         <Button
             android:id="@+id/btSearchSearch"
             android:layout_width="0dp"
@@ -76,7 +73,7 @@
             android:layout_marginTop="@dimen/margin_top_generate_button"
             android:layout_marginStart="@dimen/margin_small_default"
             android:layout_marginEnd="@dimen/margin_small_default"
-            android:text="@string/pesquisar"
+            android:text="@string/search"
             android:textStyle="bold"
             android:textSize="@dimen/button_text"
             android:textColor="@color/white"

@@ -4,29 +4,22 @@
     <string name="desc_logo_fa1">Logo Forever A1</string>
     <string name="hint_your_email">Digite seu e-mail</string>
     <string name="hint_your_password">Digite sua senha</string>
-    <string name="login">Login</string>
+    <string name="login">Entrar</string>
     <string name="field_empty_invalid">Campo vazio ou inválido</string>
     <string name="search">Pesquisar</string>
     <string name="info">Sobre</string>
     <string name="exit">Sair</string>
     <string name="welcome">Bem-vindo!</string>
     <string name="grupo_tec_tec_tech_tcesp">Grupo Tec Tec Tech / TCESP</string>
-    <string name="text_info">Este aplicativo é um parceria entre o grupo Tec Tec Tech e o Tribunal de Conta do Estado de São Paulo, desenvolvido para atender a uma avaliação da matéria de Desenvolvimento Movile, Games e Internet das Coisas.\nEle possui uma tela de login e uma tela que permite a pesquisa de dados de despesa de um município do estado de São Paulo escolhido.\n\nEle não se encontra em seu estado completo atualmente!</string>
+    <string name="text_info">Este aplicativo é um parceria entre o grupo Tec Tec Tech e o Tribunal de Conta do Estado de São Paulo, desenvolvido para atender a uma avaliação da matéria de Desenvolvimento Mobile, Games e Internet das Coisas.\nEle possui uma tela de login e uma tela que permite a pesquisa de dados de despesa de um município do estado de São Paulo escolhido.\n\nEle não se encontra em seu estado completo atualmente!</string>
     <string name="back">Voltar</string>
     <string name="bt_back">Botão voltar</string>
     <string name="logo_forever_a1">Logo Forever A1</string>
     <string name="logo_tcesp">Logo TCESP</string>
     <string name="title_search">Pesquisa de Dados de Despesas</string>
-    <string name="text_search">Selecione o município que deseja extrair os dados e o formato do arquivo que será retornado.</string>
+    <string name="text_search">Este aplicativo é um protótipo. Aperta o botão pesquisar e lhe será retornado dados referentes as despesas do município de Campinas de Julho de 2020.</string>
     <string name="hint_municipio">Digite o município</string>
-    <string name="hint_file_type">Seleciona o tipo de arquivo</string>
-    <string name="generate_file">Gerar arquivo</string>
     <string name="tabela">tabela</string>
-    <string-array name="file_type">
-        <item>CSV</item>
-        <item>PDF</item>
-        <item>TXT</item>
-    </string-array>
     <string-array name="municipios">
         <item>São Paulo</item>
         <item>Guarulhos</item>
@@ -35,10 +28,6 @@
         <item>Osasco</item>
         <item>Diadema</item>
     </string-array>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="pesquisar">PESQUISAR</string>
-    <string name="mudar_status">Mudar Status</string>
-    <string name="selecione_o_status">Selecione o status...</string>
-    <string name="registrar">REGISTRAR</string>
+    <string name="loading_data">Carregando dados...</string>
+    <string name="failed_search">Falha ao buscar despesas</string>
 </resources>

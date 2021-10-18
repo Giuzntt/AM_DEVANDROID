@@ -47,49 +47,35 @@
           android:layout_width="@dimen/main_button"
           android:layout_height="@dimen/main_button"
           android:layout_marginTop="@dimen/margin_top_default"
-          android:backgroundTint="@color/dark_red"
           android:drawableTop="@drawable/icon_info"
           android:text="@string/info"
+          android:textStyle="bold"
           android:textAlignment="center"
           android:textColor="@color/white"
-          android:textStyle="bold"
           app:layout_constraintBottom_toBottomOf="parent"
           app:layout_constraintEnd_toEndOf="parent"
           app:layout_constraintStart_toEndOf="@id/btSearch"
           app:layout_constraintTop_toBottomOf="@id/tvMainBanner"
-          app:layout_constraintVertical_bias="0.0" />
-
-      <Button
-          android:id="@+id/btTable"
-          android:layout_width="@dimen/main_button"
-          android:layout_height="@dimen/main_button"
-          android:layout_marginTop="@dimen/margin_top_default"
-          app:layout_constraintTop_toBottomOf="@id/btSearch"
-          app:layout_constraintStart_toStartOf="parent"
-          app:layout_constraintEnd_toStartOf="@id/btAboutApp"
-          android:drawableTop="@drawable/ic_table"
-          android:text="@string/tabela"
-          android:textStyle="bold"
-          android:textColor="@color/white"
-          android:textAlignment="center"
+          app:layout_constraintVertical_bias="0.0"
           android:backgroundTint="@color/dark_red"/>
 
       <Button
           android:id="@+id/btExitMain"
           android:layout_width="@dimen/main_button"
           android:layout_height="@dimen/main_button"
-          android:layout_marginTop="48dp"
-          android:backgroundTint="@color/dark_red"
+          android:layout_marginTop="@dimen/margin_top_default"
           android:drawableTop="@drawable/icon_exit"
           android:text="@string/exit"
+          android:textStyle="bold"
           android:textAlignment="center"
           android:textColor="@color/white"
-          android:textStyle="bold"
+          android:layout_marginBottom="@dimen/margin_bottom_screen"
           app:layout_constraintBottom_toBottomOf="parent"
           app:layout_constraintEnd_toEndOf="parent"
-          app:layout_constraintStart_toEndOf="@id/btTable"
-          app:layout_constraintTop_toBottomOf="@+id/btAboutApp"
-          app:layout_constraintVertical_bias="0.0" />
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@id/btSearch"
+          app:layout_constraintVertical_bias="0.0"
+          android:backgroundTint="@color/dark_red"/>
 
    </androidx.constraintlayout.widget.ConstraintLayout>
 

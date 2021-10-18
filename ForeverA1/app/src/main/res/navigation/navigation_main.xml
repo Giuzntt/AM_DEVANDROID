@@ -13,9 +13,6 @@
         <action
             android:id="@+id/action_loginFragment_to_mainFragment"
             app:destination="@id/mainFragment" />
-        <action
-            android:id="@+id/action_loginFragment_to_registerFragment2"
-            app:destination="@id/registerFragment" />
     </fragment>
     <fragment
         android:id="@+id/mainFragment"
@@ -31,9 +28,6 @@
         <action
             android:id="@+id/action_mainFragment_to_searchFragment"
             app:destination="@id/searchFragment" />
-        <action
-            android:id="@+id/action_mainFragment_to_tableFragment2"
-            app:destination="@id/tableFragment" />
     </fragment>
     <fragment
         android:id="@+id/infoFragment"
@@ -64,23 +58,5 @@
         <action
             android:id="@+id/action_resultFragment_to_searchFragment"
             app:destination="@id/searchFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/registerFragment"
-        android:name="com.example.forevera1.RegisterFragment"
-        android:label="fragment_register"
-        tools:layout="@layout/fragment_register" >
-        <action
-            android:id="@+id/action_registerFragment_to_mainFragment"
-            app:destination="@id/mainFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/tableFragment"
-        android:name="com.example.forevera1.TableFragment"
-        android:label="fragment_table"
-        tools:layout="@layout/fragment_table" >
-        <action
-            android:id="@+id/action_tableFragment_to_mainFragment2"
-            app:destination="@id/mainFragment" />
     </fragment>
 </navigation>

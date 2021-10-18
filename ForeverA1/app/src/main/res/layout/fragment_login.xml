@@ -71,7 +71,7 @@
             app:layout_constraintTop_toBottomOf="@id/tilLoginEmail"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintBottom_toTopOf="@+id/btRegister"
+            app:layout_constraintBottom_toTopOf="@+id/btLogin"
             app:startIconDrawable="@drawable/icon_padlock">
 
             <com.google.android.material.textfield.TextInputEditText
@@ -82,19 +82,6 @@
 
         </com.google.android.material.textfield.TextInputLayout>
 
-        <TextView
-            android:id="@+id/tvCadastro"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Já se cadastrou?"
-            android:textColor="@color/dark_red"
-            android:textSize="18sp"
-            android:fontFamily="sans-serif-black"
-            android:textAlignment="center"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintBottom_toTopOf="@+id/btLogin"
-            app:layout_constraintTop_toBottomOf="@+id/tilLoginPassword" />
         <Button
             android:id="@+id/btLogin"
             android:layout_width="0dp"
